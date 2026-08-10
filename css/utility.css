@@ -1,0 +1,18 @@
+/* utility first classes */
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+/* aplicação de padding em elemento "inline"  */
+.inline-block {
+  display: inline-block;
+}
+
+.container-100vw {
+  width: 100vw;
+}
