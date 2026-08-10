@@ -1,0 +1,25 @@
+
+
+#nav-primary {
+  padding-block: 20px;
+  padding-inline: 32px;
+
+  align-items: center;
+  justify-content: space-between;
+
+  & div {
+    gap: 8px;
+  }
+}
+
+
+
+#nav-secondary {
+  padding-block: 14px;
+  padding-inline: 32px;
+
+  justify-content: space-between;
+
+  border: 1px solid var(--stroke-color);
+  border-inline: none;
+}
