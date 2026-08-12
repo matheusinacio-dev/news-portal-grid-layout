@@ -1,0 +1,25 @@
+main {
+  /* temp */
+  margin-top: 36px;
+}
+
+/* #highlighted section */
+#highlights {
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+
+  /* temp */
+  margin-inline: 24px;
+}
+
+#highlights div.grid {
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+
+  & figure figcaption {
+    bottom: 12px;
+    left: 12px;
+  }
+}

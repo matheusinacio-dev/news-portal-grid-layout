@@ -16,3 +16,7 @@
 .container-100vw {
   width: 100vw;
 }
+
+.obj-fit-cover {
+  object-fit: cover;
+}
