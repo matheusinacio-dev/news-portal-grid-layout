@@ -8,6 +8,10 @@
   display: flex;
 }
 
+.gap-16px {
+  gap: 16px;
+}
+
 /* aplicação de padding em elemento "inline"  */
 .inline-block {
   display: inline-block;

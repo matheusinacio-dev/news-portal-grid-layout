@@ -1,25 +1,73 @@
 main {
-  /* temp */
-  margin-top: 36px;
+  grid-template-areas:
+    "highlights highlights"
+    "most-viewed most-viewed";
 }
 
-/* #highlighted section */
+/* #highlights section */
 #highlights {
+  grid-area: highlights;
   grid-template-columns: repeat(2, 1fr);
-
-  gap: 16px;
 
   /* temp */
   margin-inline: 24px;
+  margin-block: 40px;
 }
 
 #highlights div.grid {
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 16px;
-
   & figure figcaption {
     bottom: 12px;
     left: 12px;
+  }
+}
+
+/* most-viewed section */
+
+#most-viewed {
+  grid-area: most-viewed;
+}
+/*  dentro do escopo #most-viewed, estilize a figure filha direta de um "elemento" com a class .flex */
+#most-viewed .flex > figure {
+  /* 
+  shortcut para tais propriedades que se comportam de tal forma:
+  - flex-grow:1 -> distribuir o espaço disponível uniformemente a todas as figures (independe do conteúdo interno)
+
+  - flex-shrink:1 -> garante o encolhimento uniforme em telas menores se necessário. Como que todas partem de 0 e crescem uniformemente, seu encolhimento também é uniforme.
+
+  - flex-basis:0 -> ignora o tamanho inicial do item ou imagem,... Dessa forma todos começam do zero e são distribuidos uniformemente pelo flex- grow. Evitando assim diferentes tamanhos a depender dos tamanhos de imagem iniciais (comportamento padrão do flex-basis: auto - inicialmente era a raiz do problema)
+ */
+  flex: 1 1 0;
+}
+#most-viewed nav {
+  padding-block: 14px;
+  padding-inline: 32px;
+
+  justify-content: space-between;
+
+  border-top: 1px solid var(--stroke-color);
+}
+
+#most-viewed nav a {
+  & span {
+    background: no-repeat url(../assets/icons/ArrowRight.svg) center;
+    width: 12px;
+    height: 12px;
+  }
+
+  &:hover {
+    & span {
+      background: no-repeat url(../assets/icons/ArrowRightHover.svg) center;
+    }
+  }
+}
+
+#most-viewed figure {
+  position: relative;
+  & span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
   }
 }
