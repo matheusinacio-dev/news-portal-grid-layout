@@ -18,40 +18,42 @@
   /* typhograph */
   --font-family: "Archivo", sans-serif;
 
-  --h1: 800 24px/1.35 var(--font-family);
-  --h2: 800 16px/1.4 var(--font-family);
-  --h3: 800 14px/1.4 var(--font-family);
+  --heading-lg: 800 24px/1.35 var(--font-family);
+  --heading-md: 800 16px/1.4 var(--font-family);
+  --heading-sm: 800 14px/1.4 var(--font-family);
 
-  --span-text: 600 14px/1.45 var(--font-family);
-  --regular-text: 400 14px/1.6 var(--font-family);
+  --text-sm-600: 600 14px/1.45 var(--font-family);
+  --text-sm-400: 400 14px/1.6 var(--font-family);
 }
 
 html {
   background-color: var(--bg-color);
 
-  font: var(--span-text);
+  font: var(--text-sm-600);
   color: var(--text-color-primary);
 }
 
 /* genneral classes */
-.h1 {
-  font: var(--h1);
+
+/* text classes */
+.heading-lg {
+  font: var(--heading-lg);
 }
 
-.h2 {
-  font: var(--h2);
+.heading-md {
+  font: var(--heading-md);
 }
-.h3 {
-  font: var(--h3);
-}
-
-.regular-text {
-  font: var(--regular-text);
+.heading-sm {
+  font: var(--heading-sm);
 }
 
+.text-sm-400 {
+  font: var(--text-sm-400);
+}
 
+/* component classes */
 .content-tag {
-  font: var(--regular-text);
+  font: var(--text-sm-400);
   text-transform: uppercase;
   letter-spacing: 4%;
 
@@ -59,6 +61,28 @@ html {
   padding: 4px 8px;
   border-radius: 4px;
 }
+
+.section-nav {
+    padding-block: 14px;
+
+    justify-content: space-between;
+
+    border-top: 1px solid var(--stroke-color);
+
+    & a {
+      & span {
+        background: no-repeat url(../assets/icons/ArrowRight.svg) center;
+        width: 12px;
+        height: 12px;
+      }
+
+      &:hover {
+        & span {
+          background: no-repeat url(../assets/icons/ArrowRightHover.svg) center;
+        }
+      }
+    }
+  }
 
 /* genneral elements */
 

@@ -40,27 +40,6 @@ main {
  */
   flex: 1 1 0;
 }
-#most-viewed nav {
-  padding-block: 14px;
-
-  justify-content: space-between;
-
-  border-top: 1px solid var(--stroke-color);
-}
-
-#most-viewed nav a {
-  & span {
-    background: no-repeat url(../assets/icons/ArrowRight.svg) center;
-    width: 12px;
-    height: 12px;
-  }
-
-  &:hover {
-    & span {
-      background: no-repeat url(../assets/icons/ArrowRightHover.svg) center;
-    }
-  }
-}
 
 #most-viewed figure {
   position: relative;
