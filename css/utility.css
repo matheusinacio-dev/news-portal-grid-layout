@@ -24,3 +24,13 @@
 .obj-fit-cover {
   object-fit: cover;
 }
+
+.img-176px {
+  width: 176px;
+  aspect-ratio: 1;
+}
+
+.img-72px {
+  width: 72px;
+  aspect-ratio: 1;
+}

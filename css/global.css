@@ -45,6 +45,10 @@ html {
   font: var(--h3);
 }
 
+.regular-text {
+  font: var(--regular-text);
+}
+
 
 .content-tag {
   font: var(--regular-text);

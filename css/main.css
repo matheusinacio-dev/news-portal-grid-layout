@@ -1,4 +1,5 @@
 main {
+  padding-inline: 32px;
   grid-template-areas:
     "highlights highlights"
     "most-viewed most-viewed";
@@ -9,8 +10,6 @@ main {
   grid-area: highlights;
   grid-template-columns: repeat(2, 1fr);
 
-  /* temp */
-  margin-inline: 24px;
   margin-block: 40px;
 }
 
@@ -26,6 +25,7 @@ main {
 /* most-viewed section */
 
 #most-viewed {
+  margin-block: 80px;
   grid-area: most-viewed;
 }
 /*  dentro do escopo #most-viewed, estilize a figure filha direta de um "elemento" com a class .flex */
@@ -42,7 +42,6 @@ main {
 }
 #most-viewed nav {
   padding-block: 14px;
-  padding-inline: 32px;
 
   justify-content: space-between;
 
