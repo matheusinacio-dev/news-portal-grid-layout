@@ -4,21 +4,25 @@ aside {
     "ai-news more";
 
   gap: 32px;
-  padding-inline: 32px;
   padding-bottom: 80px;
 }
 
-aside #ai-news {
-  grid-area: ai-news;
+aside .content-tag {
+  margin-block: 5px;
 }
 
-#ai-news article {
+aside article {
   gap: 16px;
 
   & img {
     border-radius: 4px;
   }
 }
+
+aside #ai-news {
+  grid-area: ai-news;
+}
+
 aside #ad {
   grid-area: ad;
   height: 325px;
@@ -28,10 +32,3 @@ aside #more {
   grid-area: more;
 }
 
-#more article {
-  gap: 16px;
-
-  & img {
-    border-radius: 4px;
-  }
-}

@@ -1,5 +1,4 @@
 main {
-  padding-inline: 32px;
   grid-template-areas:
     "highlights highlights"
     "most-viewed most-viewed";
@@ -13,7 +12,7 @@ main {
   margin-block: 40px;
 }
 
-#highlights div.grid {
+#highlights > div.grid {
   grid-template-columns: repeat(2, 1fr);
 
   & figure figcaption {

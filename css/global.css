@@ -58,31 +58,33 @@ html {
   letter-spacing: 4%;
 
   background-color: var(--brand-color-dark);
-  padding: 4px 8px;
+
+  display: inline-block;
+  padding-inline: 4px;
   border-radius: 4px;
 }
 
 .section-nav {
-    padding-block: 14px;
+  padding-block: 14px;
 
-    justify-content: space-between;
+  justify-content: space-between;
 
-    border-top: 1px solid var(--stroke-color);
+  border-top: 1px solid var(--stroke-color);
 
-    & a {
+  & a {
+    & span {
+      background: no-repeat url(../assets/icons/ArrowRight.svg) center;
+      width: 12px;
+      height: 12px;
+    }
+
+    &:hover {
       & span {
-        background: no-repeat url(../assets/icons/ArrowRight.svg) center;
-        width: 12px;
-        height: 12px;
-      }
-
-      &:hover {
-        & span {
-          background: no-repeat url(../assets/icons/ArrowRightHover.svg) center;
-        }
+        background: no-repeat url(../assets/icons/ArrowRightHover.svg) center;
       }
     }
   }
+}
 
 /* genneral elements */
 
