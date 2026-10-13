@@ -2,7 +2,7 @@
 
 ## Uso misto de grid-layout e flexbox para projetar um portal de notícias
 
-Esse projeto foi construído como forma de fortaler os aprendizados em CSS Grid e suas diferenças em relação com o CSS Flexbox.
+Esse projeto foi construído como forma de fortalecer os aprendizados em CSS Grid e suas diferenças em relação ao o CSS Flexbox.
 
 A ideia surgiu da trilha de estudo Full-Stack da Rocketseat seguindo um layout do Figma. E as decisões tomadas tentam aproximar o projeto da referência.
 
